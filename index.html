@@ -40,7 +40,10 @@
               </li>
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="Suscribete">
+              <div class="form-floating">
+                <input id="suscribe" class="form-control me-2" type="email" placeholder="" aria-label="Suscribete">
+                <label for="suscribe">Correo Electronico  </label>
+              </div>
               <button class="btn btn-primary btn-primary-outline-success" type="button">Suscribete</button>
             </form>
           </div>
@@ -171,27 +174,32 @@
      
 
       <form   method="POST" data-netlify="true" action="#">     
-            <div class= "mb-3">           
-              <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com">
+            <div class= "mb-3 form-floating">           
+              <input type="email" class="form-control" id="email" name="email" placeholder="">
+              <label for="email">Correo</label>
             </div>
  
           
-            <div class="mb-3">            
-              <input type="input" class="form-control" id="name" name="name" placeholder="José Raúl">
+            <div class="mb-3 form-floating">            
+              <input type="input" class="form-control" id="name" name="name" placeholder="">
+              <label for="name">Nombre</label>
             </div>
       
 
-            <div class="mb-3">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono">
+            <div class="mb-3 form-floating">
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="">
+              <label for="phone">Telefono</label>
             </div>
 
-          <div class="mb-3">       
+          <div class="mb-3 form-floating">       
             <textarea class="form-control" name="message" id="message" rows="4"></textarea>
+            <label for="message">Escribe tu mensaje</label>
           </div>
 
           <div class="mb-3">
             <button type="submit" class=" btn btn-primary w-100 fs-5">Enviar Mensaje</button>
           </div>
+
       </form>
   
   </div>
